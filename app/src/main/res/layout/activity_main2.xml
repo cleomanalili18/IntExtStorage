@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cleo.intextstorage.Main2Activity">
+
+    <Button
+        android:id="@+id/btn_istorage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="LoadFromInternalStorage"
+        android:text="Display Internal Storage" />
+
+    <Button
+        android:id="@+id/btn_icache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display Internal Cache Storage"
+        android:onClick="LoadFromInternalCacheStorage"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_ecache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display External Cache Storage"
+        android:onClick="LoadFromExternalCacheStorage"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_eprivate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display External Private Storage"
+        android:onClick="LoadFromExternalPrivateStorage"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_epublic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display External Public Storage"
+        android:onClick="LoadFromExternalPublicStorage"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_shared"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="SaveInSharedPrefences"
+        android:text="Display Shared Preferences" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="Back"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1" />
+
+</LinearLayout>

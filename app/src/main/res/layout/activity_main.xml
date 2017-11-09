@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cleo.intextstorage.MainActivity">
+
+    <EditText
+        android:id="@+id/et_data"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="Data: " />
+
+    <EditText
+        android:id="@+id/et_filename"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="Filename: " />
+
+    <Button
+        android:id="@+id/btn_storage"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Internal Storage"
+        android:onClick="SaveInInternalStorage"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_icache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internal Cache"
+        android:onClick="SaveInInternalCacheStorage"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_ecache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External Cache"
+        android:onClick="SaveInExternalCacheStorage"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_eprivate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External Private"
+        android:onClick="SaveInExternalPrivateStorage"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_epublic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External Public"
+        android:onClick="SaveInExternalPublicStorage"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_shared"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="SaveInSharedPrefences"
+        android:text="Shared Preferences" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="Next"
+        android:text="Next" />
+
+</LinearLayout>
