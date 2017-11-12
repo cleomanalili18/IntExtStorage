@@ -23,6 +23,7 @@ public class Main2Activity extends AppCompatActivity {
 
         text = (TextView)findViewById(R.id.text);
     }
+    
 
     public void LoadFromInternalStorage(View view) {
         File dir = getFilesDir();
